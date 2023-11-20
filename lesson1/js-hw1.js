@@ -24,3 +24,10 @@
  console.log(t);
  let f= false;
  console.log(f);
+
+ console.log("----------------------")
+ let firstName='Yelyzaveta ';
+ let middleName='Yuryevna ';
+ let lastName='Smetana';
+ console.log(firstName+middleName+lastName)
+ console.log("----------------------")
