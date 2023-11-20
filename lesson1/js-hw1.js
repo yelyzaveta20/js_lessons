@@ -38,3 +38,6 @@
  let c = true;
  console.log(typeof c)
  console.log("----------------------")
+ console.log(prompt(firstName))
+ console.log(prompt(middleName))
+ console.log(prompt(lastName))
