@@ -208,11 +208,11 @@ else{
 //     якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
 console.log("----------------------------")
 
-let x=prompt("Ввведіть данні");
-if (x===null|| false || undefined){
+let x;
+if (x==null||""||0||undefined){
+    x ="default";
     console.log(x)
 }else {
-    x ="default";
     console.log(x)
 }
 
