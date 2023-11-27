@@ -208,7 +208,7 @@ else{
 //     якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
 console.log("----------------------------")
 
-let x;
+let x = 0;
 if (x==null||""||0||undefined){
     x ="default";
     console.log(x)
