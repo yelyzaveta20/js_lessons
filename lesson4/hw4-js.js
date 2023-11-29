@@ -33,14 +33,14 @@ function funParagraf(text) {
 }
 funParagraf('Lorem items 356')
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
-function listUl(textLi) {
-    document.write(`<ul>`)
-    document.write(`<li>${textLi}</li>`)
-    document.write(`<li>${textLi}</li>`)
-    document.write(`<li>${textLi}</li>`)
-    document.write(`</ul>`)
+function listUl(TextLi) {
+    document.write(`<ul>`);
+    document.write(`<li>${TextLi}</li>`);
+    document.write(`<li>${TextLi}</li>`);
+    document.write(`<li>${TextLi}</li>`);
+    document.write(`</ul>`);
 }
-console.log(listUl("Ліст Лі"))
+listUl('sdkhfksdj')
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
 // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 function listUlArray(text,number) {
