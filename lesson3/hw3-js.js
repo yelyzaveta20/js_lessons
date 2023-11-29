@@ -141,10 +141,7 @@ for (const user of users) {
 }
 
 // поясніть будь-ласка чрму така інтерпретація коду не працює як вище?
-// for (let i=0; i<users.length; i++){
-//     for (const usersKey of users) {
-//         if (usersKey.age>30){
-//             console.log(usersKey)
-//         }
+//
+//     for (const user of users) {
+//         console.log(user.age)
 //     }
-// }
