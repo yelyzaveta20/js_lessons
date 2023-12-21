@@ -40,12 +40,13 @@
 
 // let sessions = JSON.parse(localStorage.getItem('session')) || [];
 // let div = document.createElement('div');
-// let nowDATA=new Date().getTime()
+// let nowDATA=new Date().getDate()
+// let nowTime=new Date().getTime()
 // let btn = document.createElement('button');
 // btn.innerText = 'session';
 // btn.onclick = function () {
-//     sessions.push(nowDATA);
-//     localStorage.setItem('session', JSON.stringify(nowDATA))
+//     sessions.push(nowDATA,nowTime);
+//     localStorage.setItem('session', JSON.stringify(sessions))
 // };
 // div.appendChild(btn);
 // document.body.append(div)
@@ -55,36 +56,36 @@
 // при завантажені сторінки з'являються перші 10 об'єктів.
 //     При натисканні next виводяться настпні 10 об'єктів
 // При натисканні prev виводяться попередні 10 об'єктів
-// let mas=[]
-// for (let i = 0; i < 100; i++) {
-//     mas.push({number:i})
-//
-// }
-// let prev=document.getElementById('prev')
-// let next=document.getElementById('next')
-//
-// let div=document.createElement('div')
-// prev.onclick=function () {
-//
-//     for (let i = 0; i < 10; i++) {
-//         div.append(mas[i])
-//     }
-// }
-// document.body.append(div)
-// next.onclick=function () {
-//
-//     for (let i = 10; i < 20; i++) {
-//         div.append(mas[i])
-//     }
-// }
-// - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при
-// натисканні на кнопку зникав елемент з id="text".
-but.onclick=function () {
-    let but=document.getElementById('textButton')
-    if (but === 'textButton') {
-        but.toggle('preloader');
+let mas=[]
+for (let i = 0; i < 100; i++) {
+    mas.push({number:i})
+
+}
+let prev=document.getElementById('prev')
+let next=document.getElementById('next')
+
+let div=document.createElement('div')
+prev.onclick=function () {
+
+    for (let i = 0; i < 10; i++) {
+        div.append(mas[i])
     }
 }
+document.body.append(div)
+next.onclick=function () {
+
+    for (let i = 10; i < 20; i++) {
+        div.append(mas[i])
+    }
+}
+// - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при
+// натисканні на кнопку зникав елемент з id="text".
+// but.onclick=function () {
+//     let but=document.getElementById('textButton')
+//     if (but === 'textButton') {
+//         but.toggle('preloader');
+//     }
+// }
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати
 //     інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 //
