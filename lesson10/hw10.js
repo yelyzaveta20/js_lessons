@@ -58,38 +58,63 @@
 // При натисканні prev виводяться попередні 10 об'єктів
 let mas=[]
 for (let i = 0; i < 100; i++) {
-    mas.push({number:i})
-
+    mas.push(`number${i}`)
 }
+
+// console.log(mas);
 let prev=document.getElementById('prev')
 let next=document.getElementById('next')
 
-let div=document.createElement('div')
-prev.onclick=function () {
+let p=document.createElement('p')
 
+
+
+prev.addEventListener('click', function (e){
     for (let i = 0; i < 10; i++) {
-        div.append(mas[i])
+        p.innerText=`${mas[i]}`
     }
-}
-document.body.append(div)
-next.onclick=function () {
+    document.body.append(p)
+})
 
+next.addEventListener('click', function (e) {
     for (let i = 10; i < 20; i++) {
-        div.append(mas[i])
+        p.innerText=`${mas[i]}`
     }
-}
+    document.body.append(p)
+})
+
 // - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при
 // натисканні на кнопку зникав елемент з id="text".
-// but.onclick=function () {
-//     let but=document.getElementById('textButton')
-//     if (but === 'textButton') {
-//         but.toggle('preloader');
+// let button=document.getElementById('textButton')
+//
+// let div=document.getElementById('text')
+//
+// button.onclick=function () {
+//     if (div) {
+//         div.remove()
 //     }
 // }
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати
 //     інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
-//
-//
+// let f1 = document.f1;
+// let userAge;
+// f1.onsubmit=function (ev) {
+//     ev.preventDefault();
+//     userAge = this.age.value;
+// }
+// let p=document.createElement('p')
+// let button=document.getElementById("butt");
+// button.onclick=function (ev) {
+//     if (userAge<18){
+//         // ev.preventDefault();
+//         p.innerText=`Тобі немає 18`;
+//         document.body.append(p)
+//     }else if (userAge>=18) {
+//         p.innerText=`Тобі є 18`;
+//         document.body.append(p)
+//     }
+// }
+
 // *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
