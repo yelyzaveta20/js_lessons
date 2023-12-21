@@ -69,14 +69,14 @@ let p=document.createElement('p')
 
 
 
-prev.addEventListener('click', function (e){
+prev.addEventListener('click', function (){
     for (let i = 0; i < 10; i++) {
         p.innerText=`${mas[i]}`
     }
     document.body.append(p)
 })
 
-next.addEventListener('click', function (e) {
+next.addEventListener('click', function () {
     for (let i = 10; i < 20; i++) {
         p.innerText=`${mas[i]}`
     }
