@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+<div></div>
+<script>
+let url=new URL(location.href)
+let userUrl = url.searchParams.get('id');
+console.log(userUrl);
+let usert=JSON.parse(userUrl)
+console.log(usert);
+let div = document.getElementsByTagName('div')[0];
+div.innerText=userUrl
+// маю здогадки, що це можно зробити через фукцію та додавання
+
+// usert.forEach()
+// for (const l of usert) {
+//
+//     if (div) {
+//          = (usert[l]);
+//     }
+//
+// }
+
+
+</script>
+</body>
+</html>
